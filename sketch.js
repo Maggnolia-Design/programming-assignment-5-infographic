@@ -40,6 +40,6 @@ function setup() {
 }
 function mousePressed(){
     fill('#000')
-    text((mouseX / 10 + 100).toString() + ",",mouseX,mouseY,50,50)
-    text(((-mouseY+height/10)+5).toString(),mouseX+40,mouseY,150,50)
+    text(mouseX.toString() + ",",mouseX,mouseY,50,50)
+    text(mouseY.toString(),mouseX+38,mouseY,150,50)
 }
