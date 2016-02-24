@@ -42,6 +42,6 @@ function mousePressed(){
     fill('#000')
     var Wvalue=round(mouseX/12+100)
     var Hvalue=round((-mouseY+600+height)/12)
-    text(Wvalue.toString() + ",",mouseX,mouseY,50,50)
-    text(Hvalue.toString(),mouseX+38,mouseY,100,50)
+    text("Weight: " + Wvalue + "lb".toString(),mouseX,mouseY,100,50)
+    text("Height: " + Hvalue + "in".toString(),mouseX,mouseY+20,100,50)
 }
