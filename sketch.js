@@ -24,10 +24,10 @@ function setup() {
     background('#eee')
   
   for(var i=0;i<Height.length;i++){
-    var xVal=(Weight[i]-100)*10
-    var yVal=height-((Height[i]-50)*10)
+    var xVal=(Weight[i]-100)*12
+    var yVal=height-((Height[i]-50)*12)
 
-    if(yVal<510){
+    if(yVal<475){
       fill('#f00')
     }
     else {
@@ -40,6 +40,8 @@ function setup() {
 }
 function mousePressed(){
     fill('#000')
-    text(mouseX.toString() + ",",mouseX,mouseY,50,50)
-    text(mouseY.toString(),mouseX+38,mouseY,150,50)
+    var Wvalue=round(mouseX/12+100)
+    var Hvalue=round((-mouseY+600+height)/12)
+    text(Wvalue.toString() + ",",mouseX,mouseY,50,50)
+    text(Hvalue.toString(),mouseX+38,mouseY,100,50)
 }
